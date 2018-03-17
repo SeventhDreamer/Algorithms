@@ -2,7 +2,7 @@ function translatePigLatin(str) {
   var words = str.split(" ");
   var output = "";
   
-  for (var i=0; i<words.length; i++){//loops for each word in the string
+  for (var i=0; i<words.length; i++){
     //tests for (^|\s) begining of word after white space
     // [b-df-hj-np-tv-z] is it a consonant? and {2} check for two consonants in a row
     if(/(^|\s)[b-df-hj-np-tv-z]{2}/.test(words[i])){//handles double consonants
